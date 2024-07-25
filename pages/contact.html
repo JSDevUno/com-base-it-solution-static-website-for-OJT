@@ -102,8 +102,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7TdMg8XawtIx9QX1uDGl2H_CSJU7IKpE"></script>
     <script>
         function initMap() {
-            // Define COMBASE location
-            var comBaseLocation = { lat: 14.4514, lng: 120.9278 }; // Replace with actual COMBASE coordinates
+           
+            var comBaseLocation = { lat: 14.4123383, lng: 120.85771 }; 
 
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 14,
@@ -114,7 +114,7 @@
             var directionsRenderer = new google.maps.DirectionsRenderer();
             directionsRenderer.setMap(map);
 
-            // Get user's current location
+            
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var userLocation = {
