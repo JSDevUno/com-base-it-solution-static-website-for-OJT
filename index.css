@@ -77,7 +77,7 @@ body {
     position: relative;
     height: 600px; 
     background-image: url("./assets/companies.png"); 
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     color: white;
     padding: 20px;
