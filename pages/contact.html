@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - COMBASE</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-light fw-bolder" href="#">COM BASE</a>
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="./contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./pricelist.html">PRICE LIST</a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-light">
+                    <i class="fas fa-user fa-1x"></i>  
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container py-5">
+        <h2 class="text-center mb-4 fw-bolder text-dark">Map</h2>
+        <div class="map-container rounded-4" id="map"></div>
+        
+        <div class="container bg-dark rounded-4 py-4">
+        <h1 class="text-center">Contact Us</h1>
+        <div id="map"></div>
+
+        <div class="contact-info">
+            <h3>Let us tailor a service package that meets your needs</h3>
+            <p>Tell us a little about your business, and we will get back to you with some ideas as soon as possible.</p>
+            <p><strong>COM BASE IT SOLUTIONS (CBITS)</strong></p>
+            <p>COM BASE IT SOLUTIONS - Imus Branch - Canon Printer Authorized Service Center | Brother Authorized Service Center | Lenovo Authorized Service Center | HP Official Drop Off Center | Computer Retailer and Wholesaler | CCTV Supplies Hikvision Dahua Uniview Panasonic Honeywell & Jovision, Emilio Aguinaldo Highway, Anabu 1-B, Imus, Cavite, Philippines</p>
+            <p><strong>Main Office:</strong> Rosario Cavite (046) 4246960 / 09176230955</p>
+            <p><strong>Imus City Cavite Branch:</strong> (046) 454-7524 / 09175662273</p>
+            <p><strong>Sta. Rosa, Laguna Branch:</strong> (049) 5310446 / 09776529561</p>
+            <p><strong>Business Hours:</strong></p>
+            <p>Open today</p>
+            <p>09:00 am – 06:00 pm</p>
+            <p>Monday to Saturday: 9:00am - 6:00pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+        <div class="contact-form py-4">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label text-dark">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-dark">Email address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label text-dark">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p class="mb-0 fw-bolder">COM BASE IT SOLUTIONS (CBITS)</p>
+            <p class="mb-0">Copyright © 2024 COM BASE IT SOLUTIONS INC. All Rights Reserved.</p>
+            <p class="mb-0">1 Corinthians 16:14</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7TdMg8XawtIx9QX1uDGl2H_CSJU7IKpE"></script>
+    <script>
+        function initMap() {
+            var location = { lat: 14.4123205, lng: 120.8575226 };
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 2,
+                center: location,
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+            });
+        }
+        window.onload = initMap;
+    </script>
+</body>
+</html>
